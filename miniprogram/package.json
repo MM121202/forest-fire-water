@@ -1,0 +1,7 @@
+{
+  "name": "forest-fire-water-miniprogram",
+  "version": "1.2.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "森林冰火人小程序版引擎（CommonJS，供微信开发者工具与 Node 校验）"
+}

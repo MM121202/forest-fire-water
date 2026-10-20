@@ -1,0 +1,19 @@
+{
+  "description": "森林冰火人小程序版（PRD v1.2，零依赖 Canvas）",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "urlCheck": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.0.0",
+  "appid": "touristappid",
+  "projectname": "forest-fire-water",
+  "condition": {}
+}

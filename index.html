@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <title>森林冰火人 · Fireboy &amp; Watergirl</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar">
+        <h1>森林冰火人</h1>
+        <div id="hud">
+          <span id="hud-deaths">失误 0</span>
+          <span id="hud-time">0.0s</span>
+          <span id="hud-diamonds">💎 0/0</span>
+        </div>
+      </header>
+
+      <div id="stage">
+        <canvas id="game" width="800" height="512"></canvas>
+
+        <!-- 菜单 / 选关 -->
+        <div id="menu" class="overlay">
+          <div class="panel">
+            <h2>选择关卡</h2>
+            <div id="level-list"></div>
+            <p class="hint">
+              双人：火人 A/D 移动、W 跳；水人 ←/→ 移动、↑ 跳。<br />
+              单人：Tab 切换操控对象。手机：左右两侧虚拟按键，中间切换。
+            </p>
+          </div>
+        </div>
+
+        <!-- 结算（通关 / 失败） -->
+        <div id="result" class="overlay" hidden>
+          <div class="panel">
+            <h2 id="result-title">通关！</h2>
+            <p id="result-detail"></p>
+            <div class="btn-row">
+              <button id="btn-retry">重玩本关</button>
+              <button id="btn-next" hidden>下一关</button>
+              <button id="btn-menu">返回菜单</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 触屏虚拟按键（双人分屏 / 单人切换） -->
+      <div id="touch" aria-hidden="true"></div>
+
+      <footer id="controls">
+        <button id="btn-restart">重开 (R)</button>
+        <button id="btn-mode">模式：双人</button>
+        <button id="btn-menu2">菜单</button>
+        <span id="active-tag" hidden></span>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/ui/main.js"></script>
+  </body>
+</html>

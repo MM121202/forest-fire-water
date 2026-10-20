@@ -1,0 +1,23 @@
+page {
+  background: #10141c;
+  color: #e8edf5;
+  height: 100%;
+}
+.panel {
+  background: #1b2230;
+  padding: 22rpx 26rpx;
+  border-radius: 20rpx;
+}
+.btn {
+  background: #2a3344;
+  color: #fff;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.fire {
+  color: #ff5a4d;
+}
+.water {
+  color: #3aa0ff;
+}

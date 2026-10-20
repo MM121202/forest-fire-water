@@ -1,0 +1,33 @@
+.wrap {
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 48rpx;
+  letter-spacing: 6rpx;
+  margin-top: 40rpx;
+}
+.sub {
+  color: #9aa7bd;
+  margin: 12rpx 0 40rpx;
+  font-size: 26rpx;
+}
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rpx;
+}
+.level-btn {
+  font-size: 30rpx;
+}
+.hint {
+  color: #9aa7bd;
+  font-size: 24rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.6;
+}

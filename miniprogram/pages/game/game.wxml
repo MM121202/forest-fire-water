@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="topbar">
+    <button class="mini" bindtap="onMode">{{modeLabel}}</button>
+    <button class="mini" bindtap="onSwitch">切换</button>
+    <text class="tag">{{activeTag}}</text>
+    <button class="mini" bindtap="onMenu">菜单</button>
+  </view>
+
+  <view class="stage">
+    <canvas type="2d" id="game" style="{{canvasStyle}}"></canvas>
+    <view class="overlay" wx:if="{{resultShow}}">
+      <view class="panel">
+        <view class="big">{{resultTitle}}</view>
+        <view class="det">{{resultDetail}}</view>
+        <view class="row">
+          <button class="mini" bindtap="onRetry">重玩本关</button>
+          <button class="mini" wx:if="{{nextShow}}" bindtap="onNext">下一关</button>
+          <button class="mini" bindtap="onMenu">菜单</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="touch">
+    <view class="cluster">
+      <view class="btn2 fire" data-who="fire" data-act="left" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">◀</view>
+      <view class="btn2 fire" data-who="fire" data-act="right" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">▶</view>
+      <view class="btn2 fire" data-who="fire" data-act="jump" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">▲</view>
+    </view>
+    <view class="cluster">
+      <view class="btn2 water" data-who="water" data-act="left" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">◀</view>
+      <view class="btn2 water" data-who="water" data-act="right" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">▶</view>
+      <view class="btn2 water" data-who="water" data-act="jump" catchtouchstart="onCtrlStart" catchtouchend="onCtrlEnd">▲</view>
+    </view>
+  </view>
+</view>

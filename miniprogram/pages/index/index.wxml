@@ -1,0 +1,16 @@
+<view class="wrap">
+  <view class="title">森林冰火人</view>
+  <view class="sub">Fireboy &amp; Watergirl · 双人合作</view>
+  <view class="list">
+    <view
+      class="level-btn btn"
+      wx:for="{{levels}}"
+      wx:key="index"
+      data-index="{{item.index}}"
+      bindtap="start"
+    >{{item.index + 1}}. {{item.name}}</view>
+  </view>
+  <view class="hint">
+    双人：左右两侧虚拟按键分别控制火人/水人。\n单人：点「切换」轮流操控。
+  </view>
+</view>

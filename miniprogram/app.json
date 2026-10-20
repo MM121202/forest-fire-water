@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/game/game"
+  ],
+  "window": {
+    "navigationBarTitleText": "森林冰火人",
+    "navigationBarBackgroundColor": "#10141c",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#10141c"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

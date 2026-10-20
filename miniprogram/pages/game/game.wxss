@@ -1,0 +1,96 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 16rpx 20rpx;
+}
+.mini {
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  background: #2a3344;
+  color: #fff;
+  border-radius: 12rpx;
+  line-height: 1.4;
+  margin: 0;
+}
+.tag {
+  color: #9aa7bd;
+  font-size: 26rpx;
+  margin-left: auto;
+}
+.stage {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+#game {
+  background: #0b0f16;
+  border-radius: 12rpx;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 11, 17, 0.8);
+}
+.panel {
+  background: #1b2230;
+  padding: 40rpx 50rpx;
+  border-radius: 24rpx;
+  text-align: center;
+}
+.big {
+  font-size: 44rpx;
+  margin-bottom: 16rpx;
+}
+.det {
+  color: #9aa7bd;
+  font-size: 26rpx;
+  margin-bottom: 28rpx;
+}
+.row {
+  display: flex;
+  gap: 16rpx;
+  justify-content: center;
+}
+.touch {
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 24rpx;
+  padding-bottom: calc(16rpx + env(safe-area-inset-bottom));
+}
+.cluster {
+  display: flex;
+  gap: 20rpx;
+  align-items: center;
+}
+.btn2 {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn2.fire {
+  border-color: #ff5a4d;
+  color: #ff5a4d;
+}
+.btn2.water {
+  border-color: #3aa0ff;
+  color: #3aa0ff;
+}
